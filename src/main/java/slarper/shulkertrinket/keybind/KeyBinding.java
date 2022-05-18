@@ -6,14 +6,13 @@ import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
 import net.minecraft.client.util.InputUtil;
-import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
-import slarper.shulkertrinket.ShulkerTrinket;
 
-public class ClientNetworking implements ClientModInitializer {
+import static slarper.shulkertrinket.keybind.ShulkerTrinketPackets.OPEN_SHULKER_BOX;
+
+public class KeyBinding implements ClientModInitializer {
 
     private static net.minecraft.client.option.KeyBinding openShulkerBox;
-    public static final Identifier OPEN_SHULKER_BOX = new Identifier(ShulkerTrinket.MOD_ID, "open_shulker_box");
 
 
     @Override

@@ -19,10 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "slarper.shulkertrinket.keybind.ShulkerNetworking"
+      "slarper.shulkertrinket.keybind.NetworkingReceiver"
     ],
     "client": [
-      "slarper.shulkertrinket.keybind.ClientNetworking"
+      "slarper.shulkertrinket.keybind.KeyBinding"
     ]
   },
   "mixins": [
